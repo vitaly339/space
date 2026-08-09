@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "kosmos-booking-bot",
+  "main": "src/index.js",
+  "compatibility_date": "2026-08-09",
+  "observability": {
+    "enabled": true
+  },
+  "d1_databases": [
+    {
+      "binding": "BOOKINGS_DB",
+      "database_name": "kosmos-bookings",
+      "database_id": "REPLACE_WITH_D1_DATABASE_ID"
+    }
+  ],
+  "vars": {
+    "ADMIN_CHAT_ID": "0"
+  }
+}
